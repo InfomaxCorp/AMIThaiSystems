@@ -1,0 +1,33 @@
+<?page title="ตารางกิจกรรม"?>
+<zk>
+<include  src="menubar.zul" />
+<hbox hflex="1" width="1000px">
+	<tabbox  width="1000px">
+		
+		<tabs>
+			<tab label="วันที่ 1" closable="false"/>
+			<tab label="วันที่ 2" closable="false"/>
+			<tab label="วันที่ 3" closable="false"/>
+			<tab label="วันที่ 4" closable="false"/>
+			<tab label="วันที่ 5" closable="false"/>
+		</tabs>
+		
+		<toolbar width="92px">
+			<toolbarbutton image="/img/live.gif" onClick='alert("Add Tab")' /> 
+		</toolbar>
+		
+		<tabpanels>
+			<tabpanel>วันที่ 1 
+			
+
+</combobutton>
+			</tabpanel>
+			<tabpanel>วันที่ 2 </tabpanel>
+			<tabpanel>วันที่ 3</tabpanel>
+			<tabpanel>วันที่ 4</tabpanel>
+			<tabpanel>วันที่ 5</tabpanel>
+		</tabpanels>
+	</tabbox>
+	
+</hbox>
+</zk>

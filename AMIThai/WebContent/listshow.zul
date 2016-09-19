@@ -1,0 +1,60 @@
+<?page title="รายการการแสดงโชว์"?>
+<zk apply="com.projectth.model.ListHotelController" >
+
+<include src="include/head_logo.zul" />
+	<include src="include/menubar.zul" />
+<div style="margin-left:auto;margin-right:auto;">
+<vbox  hflex="1" >
+	
+	<groupbox> 
+	<caption label="ค้นหาการแสดง"/>
+	<vlayout  hflex="1">
+            <hbox   >
+               <label value="คำค้นหา" /><textbox width="300px" /> <button label="ค้นหา" onClick="" />
+                
+            </hbox>
+            
+           
+        </vlayout>
+	
+	</groupbox>
+	
+	 <hbox apply="com.projectth.model.ListHotelController">
+		<button label="เรียกข้อมูลใหม่" id="refreshBtn" />
+		<button label="เพิ่มรายการใหม่" id="addNewBtn" />
+	</hbox>
+    <grid id="grdList" height="450px"  
+        emptyMessage="ยังไม่มีข้อมูล"> 
+        <columns>
+            <column width="70px" label="รหัส" />
+            <column label="การแสดง" />
+            <column width="120px" label="เบอร์โทร" />
+            <column width="150px" label="ผู้ประสานงาน" />
+            <column width="250px" label="หมายเหตุ" />
+            <column width="250px" label="การดำเนินการ" />
+        </columns>
+        <rows>
+        	<row> 
+        	<label value="1" />
+        	 <label value="การแสดงเอราวัณ" />
+        	 <label value="020000000" />
+        	 <label value="นิติยา" />
+        	 <label value="เต็ม" />
+        	 <vbox>
+        	 <hbox>
+        	 <button label="แก้ไข" id="editBtn" />
+        	 <button label="ลบ" id="delBtn" />
+        	 </hbox>
+        		<button label="เพิ่มภาพประกอบการแสดง" id="photoGalleryBtn" />
+        	 </vbox>
+        	
+        	</row>
+        </rows>
+    </grid>
+    
+   
+  
+	
+</vbox>
+</div>
+</zk>
