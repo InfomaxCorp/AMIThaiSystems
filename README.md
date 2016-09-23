@@ -2,8 +2,8 @@
 
 FOLDER DESCRIPTION
 
-+customer-support
++support
 This folder will be container of OSTICKET system.
 
-+backoffice-system
++backend
 This folder will be container of Tour database, Pricing application, etc.
