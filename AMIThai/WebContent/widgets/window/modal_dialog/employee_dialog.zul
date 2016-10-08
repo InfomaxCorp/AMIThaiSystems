@@ -1,5 +1,5 @@
 <window id="modalDialog" title=" เพิ่มรายการใหม่ " border="normal"
-	width="460px" apply="com.projectth.model.EmployeeDialogController"
+	width="460px" apply="com.amithai.model.EmployeeDialogController"
 	position="center,center" closable="true"
 	action="show: slideDown;hide: slideUp">
 	<vlayout>

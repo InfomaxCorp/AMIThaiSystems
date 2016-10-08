@@ -1,6 +1,6 @@
 <window id="modalDialog" title=" เพิ่มโปรแกรมการท่องเที่ยว "
 	border="normal" width="1000px"
-	apply="com.projectth.model.EventSchedulateDialogController"
+	apply="com.amithai.model.EventSchedulateDialogController"
 	position="center,center" closable="true"
 	action="show: slideDown;hide: slideUp">
 	<vlayout>

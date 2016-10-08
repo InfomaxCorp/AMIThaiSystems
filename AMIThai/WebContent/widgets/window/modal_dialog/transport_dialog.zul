@@ -1,5 +1,5 @@
 <window id="modalDialog" title=" เพิ่มรายการการขนส่งใหม่ " border="normal"
-	width="600px" apply="com.projectth.model.TransportDialogController"
+	width="600px" apply="com.amithai.model.TransportDialogController"
 	position="center,center" closable="true"
 	action="show: slideDown;hide: slideUp">
 	<vlayout>

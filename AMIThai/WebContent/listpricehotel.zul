@@ -15,7 +15,7 @@
 				</vlayout>
 			</groupbox>
 
-			<hbox apply="com.projectth.model.ListPriceHotelController">
+			<hbox apply="com.amithai.model.ListPriceHotelController">
 				<button label="เรียกข้อมูลใหม่" id="refreshBtn" />
 				<button label="เพิ่มรายการใหม่" id="addNewBtn" />
 			</hbox>

@@ -1,6 +1,6 @@
 <window id="eventActivityDialog" title=" เพิ่มกิจกรรมใหม่ "
 	border="normal" width="900px"
-	apply="com.projectth.model.EventActivityDialogController"
+	apply="com.amithai.model.EventActivityDialogController"
 	position="center,center" closable="true"
 	action="show: slideDown;hide: slideUp">
 	<vlayout>

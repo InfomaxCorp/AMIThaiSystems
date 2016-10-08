@@ -17,7 +17,7 @@
         </vlayout>
 	
 	</groupbox>
-	<hbox apply="com.projectth.model.ListTransportController">
+	<hbox apply="com.amithai.model.ListTransportController">
 	<button label="เรียกข้อมูลใหม่" id="refreshBtn" />
 	<button label="เพิ่มรายการใหม่" id="addNewBtn" />
 	</hbox>

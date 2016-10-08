@@ -1,5 +1,5 @@
 <?page title="รายการโรงแรมที่พัก"?>
-<zk apply="com.projectth.model.ListHotelController">
+<zk apply="com.amithai.model.ListHotelController">
 	<include src="include/head_logo.zul" />
 	<include src="include/menubar.zul" />
 	<div style="margin-left:auto;margin-right:auto;">
@@ -15,7 +15,7 @@
 				</vlayout>
 			</groupbox>
 
-			<hbox apply="com.projectth.model.ListHotelController">
+			<hbox apply="com.amithai.model.ListHotelController">
 				<button label="เรียกข้อมูลใหม่" id="refreshBtn" />
 				<button label="เพิ่มรายการใหม่" id="addNewBtn" />
 			</hbox>

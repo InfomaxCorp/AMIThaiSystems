@@ -18,7 +18,7 @@
 				</groupbox>
 
 				<hbox
-					apply="com.projectth.model.ListEventSchedulateController">
+					apply="com.amithai.model.ListEventSchedulateController">
 					<button label="เรียกข้อมูลใหม่" id="refreshBtn" />
 					<button label="เพิ่มโปรแกรมการท่องเที่ยวใหม่"
 						id="addNewBtn" />

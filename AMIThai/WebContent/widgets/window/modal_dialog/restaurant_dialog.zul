@@ -1,5 +1,5 @@
 <window id="modalDialog" title=" เพิ่มรายการร้านอาหารใหม่ " border="normal"
-	width="600px" apply="com.projectth.model.RestaurantDialogController"
+	width="600px" apply="com.amithai.model.RestaurantDialogController"
 	position="center,center" closable="true"
 	action="show: slideDown;hide: slideUp">
 	<vlayout>
