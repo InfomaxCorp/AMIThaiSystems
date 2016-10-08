@@ -1,0 +1,115 @@
+<window id="modalDialog" title=" เพิ่มรายการราคาสถานที่ท่องเที่ยวใหม่ "
+	border="normal" width="900px"
+	apply="com.projectth.model.PlacePriceDialogController"
+	position="center,center" closable="true"
+	action="show: slideDown;hide: slideUp">
+	<vlayout>
+
+		<tabbox>
+			<tabs>
+				<tab label="กำหนดราคา" />
+				
+			</tabs>
+
+			<tabpanels>
+				<tabpanel>
+					<groupbox>
+						<caption label="เลือกสถานที่ท่องเที่ยว" />
+						<grid>
+							<columns>
+								<column width="120px" label="" />
+								<column hflex="1" label="" />
+
+							</columns>
+
+							<rows>
+							<row>
+									<label value=ราคาประจำปี" />
+									<textbox width="250px" />
+								</row>
+								<row>
+									<label value="ชื่อสถานที่ท่องเที่ยว" />
+									<textbox width="250px" />
+								</row>
+
+								<row>
+									<label value="ระบุช่วงเวลา" />
+									<textbox width="390px" />
+								</row>
+								<row>
+									<label value="ราคา" />
+									<textbox width="390px" />
+								</row>
+								<row>
+									<label value="หมายเหตุ" />
+									<textbox width="390px" />
+								</row>
+							</rows>
+
+						</grid>
+					</groupbox>
+					
+					<separator />
+					<grid id="grdPriceList" height="400px"
+						emptyMessage="ยังไม่มีข้อมูล">
+						<columns>
+							<column width="50px" label="เลิกใช้" />
+							<column width="50px" label="รหัส" />
+							<column width="80px" label="ราคาประจำปี" />
+							<column label="สถานที่ท่องเที่ยว" width="200px" />
+							<column width="100px" label="ช่วงเวลา" />
+							
+							<column width="100px" label="ราคา" />
+							<column width="250px" label="หมายเหตุ" />
+							<column width="100px" label="การดำเนินการ" />
+						</columns>
+						
+						<rows>
+							<row>
+								<checkbox checked="false"/>
+								<label value="1" />
+								<label value="วัดพระแก้ว" />
+								<label value="พีค" />
+								<label value="100.00" />
+								<label value="" />
+								
+								<vbox>
+									<hbox>
+										<button label="แก้ไข"
+											id="editBtn" />
+										<button label="ลบ"  />
+									</hbox>
+								</vbox>
+							</row>
+							<row>
+							<checkbox checked="false"/>
+								<label value="2" />
+								<label value="โรงแรมเอราวัณ" />
+								<label value="พีค" />
+
+								<label value="3,270.00" />
+								<label value="เพิ่มเตียง +700 บาท" />
+								
+								<vbox>
+									<hbox>
+										<button label="แก้ไข"
+											 />
+										<button label="ลบ"  />
+									</hbox>
+								</vbox>
+							</row>
+						</rows>
+					</grid>
+				</tabpanel>
+
+				
+			</tabpanels>
+		</tabbox>
+
+		<hbox>
+			<button id="saveBtn" hflex="1" label="บันทึก" />
+			<button id="closeBtn" hflex="1" label="ปิดหน้าต่าง" />
+		</hbox>
+
+	</vlayout>
+</window>

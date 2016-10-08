@@ -1,0 +1,96 @@
+<window id="eventActivityDialog" title=" เพิ่มกิจกรรมใหม่ "
+	border="normal" width="900px"
+	apply="com.projectth.model.EventActivityDialogController"
+	position="center,center" closable="true"
+	action="show: slideDown;hide: slideUp">
+	<vlayout>
+
+		<tabbox>
+			<tabs>
+				<tab label="ข้อมูลทั่วไป" />
+				<tab label="ข้อมูลผู้ติดต่อ" />
+			</tabs>
+
+			<tabpanels>
+				<tabpanel>
+					
+						
+						<grid>
+							<columns>
+								<column width="120px" label="" />
+								<column hflex="1" label="" />
+								<column hflex="1" label="" />
+							</columns>
+							<rows>
+								<row>
+									<label value="ชื่อกิจกรรม" />
+									<textbox width="300px" />
+								</row>
+								<row>
+									<label value="รายละเอียด" />
+									<textbox width="300px" />
+								</row>
+								<row>
+									<label value="ประเภทบริการ" />
+									<textbox width="300px" />
+								</row>
+								<row>
+									<label value="ค่าบริการ" />
+									<textbox width="300px" />
+									<button label="เรียกราคาจากระบบ" />
+								</row>
+								
+								<row>
+									<label value="หมายเหตุ" />
+									<textbox width="300px" rows="2" />
+								</row>
+							</rows>
+
+						</grid>
+
+
+						
+					
+					<separator />
+
+				</tabpanel>
+
+				<!--  tab 2 -->
+				<tabpanel>
+					<grid>
+							<columns>
+								<column width="120px" label="" />
+								<column hflex="1" label="" />
+
+							</columns>
+
+							<rows>
+								<row>
+									<label value="โทรศัพท์" />
+									<textbox width="300px" />
+
+								</row>
+								<row>
+									<label value="อีเมล์" />
+									<textbox width="300px" />
+
+								</row>
+								<row>
+									<label value="ผู้ประสานงาน" />
+									<textbox width="300px" />
+
+								</row>
+							</rows>
+
+						</grid>
+				</tabpanel>
+			</tabpanels>
+		</tabbox>
+
+		<hbox>
+			<button id="saveBtn" hflex="1" label="บันทึก" />
+			<button id="closeBtn" hflex="1" label="ปิดหน้าต่าง" />
+		</hbox>
+
+	</vlayout>
+</window>

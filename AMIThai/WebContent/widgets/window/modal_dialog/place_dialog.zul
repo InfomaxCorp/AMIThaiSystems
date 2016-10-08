@@ -1,4 +1,4 @@
-<window id="modalDialog" title=" เพิ่มรายการใหม่ " border="normal"
+<window id="modalDialog" title=" เพิ่มรายการสถานที่ท่องเที่ยวใหม่ " border="normal"
 	width="600px" apply="com.projectth.model.PlaceDialogController"
 	position="center,center" closable="true"
 	action="show: slideDown;hide: slideUp">
@@ -62,7 +62,7 @@
 							<rows>
 								<row>
 									<label value="รายละเอียด" />
-									<textbox rows="20" type="text"
+									<textbox rows="10" type="text"
 										cols="60" />
 
 								</row>

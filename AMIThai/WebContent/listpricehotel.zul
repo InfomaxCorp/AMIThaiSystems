@@ -1,0 +1,59 @@
+<?page title="รายการโรงแรมที่พัก"?>
+<zk >
+	<include src="include/head_logo.zul" />
+	<include src="include/menubar.zul" />
+	<div style="margin-left:auto;margin-right:auto;">
+		<vbox hflex="1">
+			<groupbox>
+				<caption label="ค้นหาโรงแรม" />
+				<vlayout hflex="1">
+					<hbox>
+						<label value="คำค้นหา" />
+						<textbox width="300px" />
+						<button label="ค้นหา" onClick="" />
+					</hbox>
+				</vlayout>
+			</groupbox>
+
+			<hbox apply="com.projectth.model.ListPriceHotelController">
+				<button label="เรียกข้อมูลใหม่" id="refreshBtn" />
+				<button label="เพิ่มรายการใหม่" id="addNewBtn" />
+			</hbox>
+			
+			<grid id="grdList" height="450px"
+				emptyMessage="ยังไม่มีข้อมูล">
+				<columns>
+					<column width="70px" label="รหัส" />
+					<column label="ราคาประจำปี" width="70px" />
+					<column label="โรงแรม" />
+					
+					<column width="250px" label="หมายเหตุ" />
+					<column width="120px" label="วันที่บันทึกราคา" />
+					<column width="250px" label="การดำเนินการ" />
+				</columns>
+				<rows>
+					<row>
+						<label value="1" />
+						<label value="59-2" />
+						<label value="โรงแรมเอราวัณ" />
+						<label value="เต็ม" />
+						<label value="2016-12-01" />
+						<vbox>
+							<hbox>
+								<button label="แก้ไข" id="editBtn" />
+								<button label="ลบ" id="delBtn" />
+							</hbox>
+							
+						</vbox>
+
+					</row>
+					
+				</rows>
+			</grid>
+
+
+
+
+		</vbox>
+	</div>
+</zk>

@@ -23,13 +23,12 @@
 				label="ข้อมูลร้านอาหาร" href="listrestaurant.zul"
 				onClick="alert(self.label)" />
 
-
-
 			<menuitem label="ข้อมูลการเดินทาง"
 				image="/img/Centigrade-Widget-Icons/DoorOpen-16x16.png"
 				href="listtransport.zul" onClick="alert(self.label)" />
 		</menupopup>
 	</menu>
+
 
 	<menu label="ราคาบริการ"
 		image="/img/Centigrade-Widget-Icons/Briefcase-16x16.png">
@@ -38,12 +37,15 @@
 				image="/img/Centigrade-Widget-Icons/BriefcaseSpark-16x16.png"
 				label="ราคาโรงแรม" href="listpricehotel.zul"
 				onClick="alert(self.label)" />
+				
 			<menuitem href="listpriceshow.zul"
 				image="/img/Centigrade-Widget-Icons/BriefcaseSpark-16x16.png"
 				label="ราคาการแสดง" onClick="alert(self.label)" />
+				
 			<menuitem href="listpriceplace.zul"
 				image="/img/Centigrade-Widget-Icons/BriefcaseOpen-16x16.png"
 				label="ราคาสถานที่ท่องเที่ยว" onClick="alert(self.label)" />
+				
 			<menuitem href="listpricerestaurant.zul"
 				image="/img/Centigrade-Widget-Icons/DisketteBlack-16x16.png"
 				label="ราคาร้านอาหาร" onClick="alert(self.label)" />
@@ -51,6 +53,18 @@
 			<menuitem label="ราคาเดินทาง"
 				image="/img/Centigrade-Widget-Icons/DoorOpen-16x16.png"
 				onClick="alert(self.label)" />
+				
+		</menupopup>
+	</menu>
+<menuseparator />
+<menu label="โปรแกรมการท่องเที่ยว"
+		image="/img/Centigrade-Widget-Icons/Briefcase-16x16.png">
+		<menupopup>
+			<menuitem
+				image="/img/Centigrade-Widget-Icons/BriefcaseSpark-16x16.png"
+				label="รายการโปรแกรมการท่องเที่ยว" href="eventscheduale.zul"
+				onClick="alert(self.label)" />
+								
 		</menupopup>
 	</menu>
 

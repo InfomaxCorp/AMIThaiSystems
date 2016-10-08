@@ -26,6 +26,7 @@
 					<column width="70px" label="รหัส" />
 					<column label="โรงแรม" />
 					<column width="120px" label="เบอร์โทร" />
+					<column width="120px" label="อีเมล์" />
 					<column width="150px" label="ผู้ประสานงาน" />
 					<column width="250px" label="หมายเหตุ" />
 					<column width="250px" label="การดำเนินการ" />
@@ -35,6 +36,7 @@
 						<label value="1" />
 						<label value="โรงแรมเอราวัณ" />
 						<label value="020000000" />
+						<label value="test1@mail.com" />
 						<label value="นิติยา" />
 						<label value="เต็ม" />
 						<vbox>
@@ -50,6 +52,7 @@
 						<label value="1" />
 						<label value="โรงแรมเอราวัณ" />
 						<label value="020000000" />
+						<label value="test1@mail.com" />
 						<label value="นิติยา" />
 						<label value="เต็ม" />
 						<vbox>
@@ -66,6 +69,7 @@
 						<label value="1" />
 						<label value="โรงแรมเอราวัณ" />
 						<label value="020000000" />
+						<label value="test1@mail.com" />
 						<label value="นิติยา" />
 						<label value="เต็ม" />
 						<vbox>

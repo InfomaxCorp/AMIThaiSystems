@@ -1,6 +1,7 @@
 <?page title="ตารางกิจกรรม"?>
 <zk>
-<include  src="menubar.zul" />
+<include src="include/head_logo.zul" />
+	<include src="include/menubar.zul" />
 <div style="margin-left:auto;margin-right:auto;">
 <vbox  hflex="1" >
 	
@@ -16,7 +17,7 @@
         </vlayout>
 	
 	</groupbox>
-	<hbox>
+	<hbox apply="com.projectth.model.ListTransportController">
 	<button label="เรียกข้อมูลใหม่" id="refreshBtn" />
 	<button label="เพิ่มรายการใหม่" id="addNewBtn" />
 	</hbox>
@@ -28,6 +29,7 @@
             <column width="70px" label="รหัส" />
             <column label="บริษัทขนส่ง" />
             <column width="120px" label="เบอร์โทร" />
+            <column width="120px" label="อีเมล์" />
             <column width="150px" label="ผู้ประสานงาน" />
             <column width="250px" label="หมายเหตุ" />
         </columns>

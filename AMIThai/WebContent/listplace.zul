@@ -18,7 +18,7 @@
 	
 	</groupbox>
 	
-	 <hbox apply="com.projectth.model.ListHotelController">
+	 <hbox apply="com.projectth.model.ListPlaceController">
 		<button label="เรียกข้อมูลใหม่" id="refreshBtn" />
 		<button label="เพิ่มรายการใหม่" id="addNewBtn" />
 	</hbox>
@@ -28,6 +28,7 @@
             <column width="70px" label="รหัส" />
             <column label="สถานที่ท่องเที่ยว" />
             <column width="120px" label="เบอร์โทร" />
+            <column width="120px" label="อีเมล์" />
             <column width="150px" label="ผู้ประสานงาน" />
             <column width="250px" label="หมายเหตุ" />
             <column width="250px" label="การดำเนินการ" />
@@ -37,6 +38,7 @@
         	<label value="1" />
         	 <label value="สถานที่ท่องเที่ยวเอราวัณ" />
         	 <label value="020000000" />
+        	 <label value="test1@mail.com" />
         	 <label value="นิติยา" />
         	 <label value="เต็ม" />
         	 <vbox>

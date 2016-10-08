@@ -15,7 +15,7 @@
 	
 	</groupbox>
 	
-	<hbox>
+	<hbox apply="com.projectth.model.ListRestaurantController">
 	<button label="เรียกข้อมูลใหม่" id="refreshBtn" />
 	<button label="เพิ่มรายการใหม่" id="addNewBtn" />
 	</hbox>
@@ -25,6 +25,7 @@
             <column width="70px" label="รหัส" />
             <column label="ร้านอาหาร" />
             <column width="120px" label="เบอร์โทร" />
+            <column width="120px" label="อีเมล์" />
             <column width="150px" label="ผู้ประสานงาน" />
             <column width="250px" label="หมายเหตุ" />
         </columns>

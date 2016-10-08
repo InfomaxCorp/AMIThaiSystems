@@ -1,0 +1,580 @@
+<window id="modalDialog" title=" เพิ่มโปรแกรมการท่องเที่ยว "
+	border="normal" width="1000px"
+	apply="com.projectth.model.EventSchedulateDialogController"
+	position="center,center" closable="true"
+	action="show: slideDown;hide: slideUp">
+	<vlayout>
+
+
+		<groupbox>
+			<caption label="ส่วนหัวโปรแกรมการท่องเที่ยว" />
+			<grid>
+				<columns>
+					<column width="120px" label="" />
+					<column hflex="1" label="" />
+
+				</columns>
+
+				<rows>
+					<row>
+						<label value="" />
+						<label value="" />
+
+					</row>
+					<row>
+						<label value="ชื่อกรุ๊ป" />
+						<textbox width="290px" />
+					</row>
+					<row>
+						<label value="เอเจนท์" />
+						<textbox width="250px" />
+					</row>
+					<row>
+						<label value="ผู้ดูแล" />
+						<textbox width="290px" />
+
+					</row>
+					<row>
+						<label value="วันรับเข้า" />
+						<textbox width="150px" />
+					</row>
+					<row>
+						<label value="วันส่งออก" />
+						<textbox width="150px" />
+					</row>
+					<row>
+						<label value="หมายเหตุ" />
+						<textbox width="390px" rows="3" />
+
+					</row>
+				</rows>
+
+			</grid>
+		</groupbox>
+
+
+		<div></div>
+		<tabbox width="1000px">
+
+			<tabs>
+				<tab label="วันที่ 1" closable="false" />
+				<tab label="วันที่ 2" closable="false" />
+				<tab label="วันที่ 3" closable="false" />
+				<tab label="วันที่ 4" closable="false" />
+				<tab label="วันที่ 5" closable="false" />
+			</tabs>
+
+			<toolbar width="92px">
+				<toolbarbutton image="/img/live.gif"
+					onClick='alert("Add Tab")' />
+			</toolbar>
+
+			<tabpanels>
+				<tabpanel>
+					<hbox>
+						<button label="เรียกข้อมูลใหม่" id="refreshBtn" />
+						<button label="เพิ่มรายการกิจกรรมใหม่"
+							id="addNewEventBtn" />
+					</hbox>
+
+					<grid height="300px"
+						emptyMessage="ยังไม่มีข้อมูล">
+						<columns>
+							<column width="40px" label="ลำดับ" />
+							<column width="250px" label="กิจกรรม" />
+							<column width="250px" label="รายละเอียด" />
+							<column width="150px" label="ต้นทุน" />
+							<column width="100px" label="ผู้ดูแล" />
+							<column width="100px" label="เบอร์ประสานงาน" />
+							<column width="100px" label="วันที่ เวลา" />
+							<column width="250px" label="หมายเหตุ" />
+							<column width="100px" label="การดำเนินการ" />
+						</columns>
+						<rows>
+							<row>
+								<label value="1" />
+								<label
+									value="รับ จากที่สนามบิน ไปที่ โรงแรมที่พัก" />
+								<label
+									value="เตรียมเจ้าหน้าที่เตรียมต้อนรับ ลูกทัวร์ และมีมอบดอกไม้" />
+									
+								<label value="3,000.00" />	
+									
+								<label value="คุณกระด่าย" />
+								<label value="081-1111-111" />
+								<label value="16-12-2016 10.30 น." />
+								<label
+									value="ติดต่อคุณกระต่ายก่อนเครื่อง ลง 30 นาที" />
+								<vbox>
+									<hbox>
+										<button label="แก้ไข" />
+										<button label="ลบ" />
+									</hbox>
+									<button label="เอกสารประกอบ" />
+								</vbox>
+
+							</row>
+
+							<row>
+								<label value="2" />
+								<label
+									value="check in ที่โรงแรม และเตรียมรับทานอาหาร" />
+								<label value="" />
+								<label value="2,700.00" />
+								<label value="คุณกระด่าย" />
+								<label value="081-1111-111" />
+								<label value="16-12-2016 11.30 น." />
+								<label value="ติดต่อสำนักงาน AMI Thai" />
+								<vbox>
+									<hbox>
+										<button label="แก้ไข" />
+										<button label="ลบ" />
+									</hbox>
+									<button label="เอกสารประกอบ" />
+								</vbox>
+
+							</row>
+
+							<row>
+								<label value="3" />
+								<label value="พาชมวัดพระแก้ว เวลาค่ำ" />
+								<label
+									value="ชมวัดพระแก้วเวลาหัวค่ำเพื่อรับชมบรรยาการแสงสี" />
+									<label value="100.00" />
+								<label value="คุณมงคล" />
+								<label value="081-1111-112" />
+								<label value="16-12-2016 18.30 น." />
+								<label
+									value="ประสานรถทัวร์ ออกมารอรับลูกทัีีวร์ ก่อน 1 ชั่วโมง" />
+								<vbox>
+									<hbox>
+										<button label="แก้ไข" />
+										<button label="ลบ" />
+									</hbox>
+									<button label="เอกสารประกอบ" />
+								</vbox>
+
+							</row>
+							<row>
+								<label value="4" />
+								<label
+									value="พาลูกทัวร์ส่งที่โรงแรมที่พัก" />
+								<label value="" />
+								<label value="50.00" />
+								<label value="คุณมงคล" />
+								<label value="081-1111-112" />
+								<label value="16-12-2016 20.30 น." />
+								<label
+									value="ประสานรถทัวร์ ออกมารอรับลูกทัีีวร์ ก่อน 30 ชั่วโมง" />
+									
+								<vbox>
+									<hbox>
+										<button label="แก้ไข" />
+										<button label="ลบ" />
+									</hbox>
+									<button label="เอกสารประกอบ" />
+								</vbox>
+
+							</row>
+						</rows>
+					</grid>
+
+				</tabpanel>
+				<tabpanel>
+					<grid height="350px"
+						emptyMessage="ยังไม่มีข้อมูล">
+						<columns>
+							<column width="40px" label="ลำดับ" />
+							<column width="250px" label="กิจกรรม" />
+							<column width="250px" label="รายละเอียด" />
+							<column width="100px" label="ผู้ดูแล" />
+							<column width="100px"
+								label="เบอร์ประสานงาน" />
+							<column width="100px" label="วันที่ เวลา" />
+							<column width="250px" label="หมายเหตุ" />
+							<column width="100px" label="การดำเนินการ" />
+						</columns>
+						<rows>
+
+							<row>
+								<label value="1" />
+								<label
+									value="รับ จากที่สนามบิน ไปที่ โรงแรมที่พัก" />
+								<label
+									value="เตรียมเจ้าหน้าที่เตรียมต้อนรับ ลูกทัวร์ และมีมอบดอกไม้" />
+								<label value="คุณกระด่าย" />
+								<label value="081-1111-111" />
+								<label value="16-12-2016 10.30 น." />
+								<label
+									value="ติดต่อคุณกระต่ายก่อนเครื่อง ลง 30 นาที" />
+								<vbox>
+									<hbox>
+										<button label="แก้ไข" />
+										<button label="ลบ" />
+									</hbox>
+									<button label="เอกสารประกอบ" />
+								</vbox>
+
+							</row>
+
+							<row>
+								<label value="2" />
+								<label
+									value="check in ที่โรงแรม และเตรียมรับทานอาหาร" />
+								<label value="" />
+								<label value="คุณกระด่าย" />
+								<label value="081-1111-111" />
+								<label value="16-12-2016 11.30 น." />
+								<label value="ติดต่อสำนักงาน AMI Thai" />
+								<vbox>
+									<hbox>
+										<button label="แก้ไข" />
+										<button label="ลบ" />
+									</hbox>
+									<button label="เอกสารประกอบ" />
+								</vbox>
+
+							</row>
+
+							<row>
+								<label value="3" />
+								<label value="พาชมวัดพระแก้ว เวลาค่ำ" />
+								<label
+									value="ชมวัดพระแก้วเวลาหัวค่ำเพื่อรับชมบรรยาการแสงสี" />
+								<label value="คุณมงคล" />
+								<label value="081-1111-112" />
+								<label value="16-12-2016 18.30 น." />
+								<label
+									value="ประสานรถทัวร์ ออกมารอรับลูกทัีีวร์ ก่อน 1 ชั่วโมง" />
+								<vbox>
+									<hbox>
+										<button label="แก้ไข" />
+										<button label="ลบ" />
+									</hbox>
+									<button label="เอกสารประกอบ" />
+								</vbox>
+
+							</row>
+							<row>
+								<label value="4" />
+								<label
+									value="พาลูกทัวร์ส่งที่โรงแรมที่พัก" />
+								<label value="" />
+								<label value="คุณมงคล" />
+								<label value="081-1111-112" />
+								<label value="16-12-2016 20.30 น." />
+								<label
+									value="ประสานรถทัวร์ ออกมารอรับลูกทัีีวร์ ก่อน 30 ชั่วโมง" />
+								<vbox>
+									<hbox>
+										<button label="แก้ไข" />
+										<button label="ลบ" />
+									</hbox>
+									<button label="เอกสารประกอบ" />
+								</vbox>
+
+							</row>
+						</rows>
+					</grid>
+				</tabpanel>
+				<tabpanel>
+					<grid height="350px"
+						emptyMessage="ยังไม่มีข้อมูล">
+						<columns>
+							<column width="40px" label="ลำดับ" />
+							<column width="250px" label="กิจกรรม" />
+							<column width="250px" label="รายละเอียด" />
+							<column width="100px" label="ผู้ดูแล" />
+							<column width="100px"
+								label="เบอร์ประสานงาน" />
+							<column width="100px" label="วันที่ เวลา" />
+							<column width="250px" label="หมายเหตุ" />
+							<column width="100px" label="การดำเนินการ" />
+						</columns>
+						<rows>
+
+							<row>
+								<label value="1" />
+								<label
+									value="รับ จากที่สนามบิน ไปที่ โรงแรมที่พัก" />
+								<label
+									value="เตรียมเจ้าหน้าที่เตรียมต้อนรับ ลูกทัวร์ และมีมอบดอกไม้" />
+								<label value="คุณกระด่าย" />
+								<label value="081-1111-111" />
+								<label value="16-12-2016 10.30 น." />
+								<label
+									value="ติดต่อคุณกระต่ายก่อนเครื่อง ลง 30 นาที" />
+								<vbox>
+									<hbox>
+										<button label="แก้ไข" />
+										<button label="ลบ" />
+									</hbox>
+									<button label="เอกสารประกอบ" />
+								</vbox>
+
+							</row>
+
+							<row>
+								<label value="2" />
+								<label
+									value="check in ที่โรงแรม และเตรียมรับทานอาหาร" />
+								<label value="" />
+								<label value="คุณกระด่าย" />
+								<label value="081-1111-111" />
+								<label value="16-12-2016 11.30 น." />
+								<label value="ติดต่อสำนักงาน AMI Thai" />
+								<vbox>
+									<hbox>
+										<button label="แก้ไข" />
+										<button label="ลบ" />
+									</hbox>
+									<button label="เอกสารประกอบ" />
+								</vbox>
+
+							</row>
+
+							<row>
+								<label value="3" />
+								<label value="พาชมวัดพระแก้ว เวลาค่ำ" />
+								<label
+									value="ชมวัดพระแก้วเวลาหัวค่ำเพื่อรับชมบรรยาการแสงสี" />
+								<label value="คุณมงคล" />
+								<label value="081-1111-112" />
+								<label value="16-12-2016 18.30 น." />
+								<label
+									value="ประสานรถทัวร์ ออกมารอรับลูกทัีีวร์ ก่อน 1 ชั่วโมง" />
+								<vbox>
+									<hbox>
+										<button label="แก้ไข" />
+										<button label="ลบ" />
+									</hbox>
+									<button label="เอกสารประกอบ" />
+								</vbox>
+
+							</row>
+							<row>
+								<label value="4" />
+								<label
+									value="พาลูกทัวร์ส่งที่โรงแรมที่พัก" />
+								<label value="" />
+								<label value="คุณมงคล" />
+								<label value="081-1111-112" />
+								<label value="16-12-2016 20.30 น." />
+								<label
+									value="ประสานรถทัวร์ ออกมารอรับลูกทัีีวร์ ก่อน 30 ชั่วโมง" />
+								<vbox>
+									<hbox>
+										<button label="แก้ไข" />
+										<button label="ลบ" />
+									</hbox>
+									<button label="เอกสารประกอบ" />
+								</vbox>
+
+							</row>
+						</rows>
+					</grid>
+				</tabpanel>
+				<tabpanel>
+					<grid height="350px"
+						emptyMessage="ยังไม่มีข้อมูล">
+						<columns>
+							<column width="40px" label="ลำดับ" />
+							<column width="250px" label="กิจกรรม" />
+							<column width="250px" label="รายละเอียด" />
+							<column width="100px" label="ผู้ดูแล" />
+							<column width="100px"
+								label="เบอร์ประสานงาน" />
+							<column width="100px" label="วันที่ เวลา" />
+							<column width="250px" label="หมายเหตุ" />
+							<column width="100px" label="การดำเนินการ" />
+						</columns>
+						<rows>
+
+							<row>
+								<label value="1" />
+								<label
+									value="รับ จากที่สนามบิน ไปที่ โรงแรมที่พัก" />
+								<label
+									value="เตรียมเจ้าหน้าที่เตรียมต้อนรับ ลูกทัวร์ และมีมอบดอกไม้" />
+								<label value="คุณกระด่าย" />
+								<label value="081-1111-111" />
+								<label value="16-12-2016 10.30 น." />
+								<label
+									value="ติดต่อคุณกระต่ายก่อนเครื่อง ลง 30 นาที" />
+								<vbox>
+									<hbox>
+										<button label="แก้ไข" />
+										<button label="ลบ" />
+									</hbox>
+									<button label="เอกสารประกอบ" />
+								</vbox>
+
+							</row>
+
+							<row>
+								<label value="2" />
+								<label
+									value="check in ที่โรงแรม และเตรียมรับทานอาหาร" />
+								<label value="" />
+								<label value="คุณกระด่าย" />
+								<label value="081-1111-111" />
+								<label value="16-12-2016 11.30 น." />
+								<label value="ติดต่อสำนักงาน AMI Thai" />
+								<vbox>
+									<hbox>
+										<button label="แก้ไข" />
+										<button label="ลบ" />
+									</hbox>
+									<button label="เอกสารประกอบ" />
+								</vbox>
+
+							</row>
+
+							<row>
+								<label value="3" />
+								<label value="พาชมวัดพระแก้ว เวลาค่ำ" />
+								<label
+									value="ชมวัดพระแก้วเวลาหัวค่ำเพื่อรับชมบรรยาการแสงสี" />
+								<label value="คุณมงคล" />
+								<label value="081-1111-112" />
+								<label value="16-12-2016 18.30 น." />
+								<label
+									value="ประสานรถทัวร์ ออกมารอรับลูกทัีีวร์ ก่อน 1 ชั่วโมง" />
+								<vbox>
+									<hbox>
+										<button label="แก้ไข" />
+										<button label="ลบ" />
+									</hbox>
+									<button label="เอกสารประกอบ" />
+								</vbox>
+
+							</row>
+							<row>
+								<label value="4" />
+								<label
+									value="พาลูกทัวร์ส่งที่โรงแรมที่พัก" />
+								<label value="" />
+								<label value="คุณมงคล" />
+								<label value="081-1111-112" />
+								<label value="16-12-2016 20.30 น." />
+								<label
+									value="ประสานรถทัวร์ ออกมารอรับลูกทัีีวร์ ก่อน 30 ชั่วโมง" />
+								<vbox>
+									<hbox>
+										<button label="แก้ไข" />
+										<button label="ลบ" />
+									</hbox>
+									<button label="เอกสารประกอบ" />
+								</vbox>
+
+							</row>
+						</rows>
+					</grid>
+				</tabpanel>
+				<tabpanel>
+					<grid id="grdList" height="350px"
+						emptyMessage="ยังไม่มีข้อมูล">
+						<columns>
+							<column width="40px" label="ลำดับ" />
+							<column width="250px" label="กิจกรรม" />
+							<column width="250px" label="รายละเอียด" />
+							<column width="100px" label="ผู้ดูแล" />
+							<column width="100px"
+								label="เบอร์ประสานงาน" />
+							<column width="100px" label="วันที่ เวลา" />
+							<column width="250px" label="หมายเหตุ" />
+							<column width="100px" label="การดำเนินการ" />
+						</columns>
+						<rows>
+
+							<row>
+								<label value="1" />
+								<label
+									value="รับ จากที่สนามบิน ไปที่ โรงแรมที่พัก" />
+								<label
+									value="เตรียมเจ้าหน้าที่เตรียมต้อนรับ ลูกทัวร์ และมีมอบดอกไม้" />
+								<label value="คุณกระด่าย" />
+								<label value="081-1111-111" />
+								<label value="16-12-2016 10.30 น." />
+								<label
+									value="ติดต่อคุณกระต่ายก่อนเครื่อง ลง 30 นาที" />
+								<vbox>
+									<hbox>
+										<button label="แก้ไข" />
+										<button label="ลบ" />
+									</hbox>
+									<button label="เอกสารประกอบ" />
+								</vbox>
+
+							</row>
+
+							<row>
+								<label value="2" />
+								<label
+									value="check in ที่โรงแรม และเตรียมรับทานอาหาร" />
+								<label value="" />
+								<label value="คุณกระด่าย" />
+								<label value="081-1111-111" />
+								<label value="16-12-2016 11.30 น." />
+								<label value="ติดต่อสำนักงาน AMI Thai" />
+								<vbox>
+									<hbox>
+										<button label="แก้ไข" />
+										<button label="ลบ" />
+									</hbox>
+									<button label="เอกสารประกอบ" />
+								</vbox>
+
+							</row>
+
+							<row>
+								<label value="3" />
+								<label value="พาชมวัดพระแก้ว เวลาค่ำ" />
+								<label
+									value="ชมวัดพระแก้วเวลาหัวค่ำเพื่อรับชมบรรยาการแสงสี" />
+								<label value="คุณมงคล" />
+								<label value="081-1111-112" />
+								<label value="16-12-2016 18.30 น." />
+								<label
+									value="ประสานรถทัวร์ ออกมารอรับลูกทัีีวร์ ก่อน 1 ชั่วโมง" />
+								<vbox>
+									<hbox>
+										<button label="แก้ไข" />
+										<button label="ลบ" />
+									</hbox>
+									<button label="เอกสารประกอบ" />
+								</vbox>
+
+							</row>
+							<row>
+								<label value="4" />
+								<label
+									value="พาลูกทัวร์ส่งที่โรงแรมที่พัก" />
+								<label value="" />
+								<label value="คุณมงคล" />
+								<label value="081-1111-112" />
+								<label value="16-12-2016 20.30 น." />
+								<label
+									value="ประสานรถทัวร์ ออกมารอรับลูกทัีีวร์ ก่อน 30 ชั่วโมง" />
+								<vbox>
+									<hbox>
+										<button label="แก้ไข" />
+										<button label="ลบ" />
+									</hbox>
+									<button label="เอกสารประกอบ" />
+								</vbox>
+
+							</row>
+						</rows>
+					</grid>
+				</tabpanel>
+			</tabpanels>
+		</tabbox>
+
+		<hbox>
+			<button id="saveBtn" hflex="1" label="บันทึก" />
+			<button id="closeBtn" hflex="1" label="ปิดหน้าต่าง" />
+		</hbox>
+
+	</vlayout>
+</window>

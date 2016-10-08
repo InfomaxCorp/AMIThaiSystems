@@ -1,33 +1,95 @@
 <?page title="ตารางกิจกรรม"?>
 <zk>
-<include  src="menubar.zul" />
-<hbox hflex="1" width="1000px">
-	<tabbox  width="1000px">
-		
-		<tabs>
-			<tab label="วันที่ 1" closable="false"/>
-			<tab label="วันที่ 2" closable="false"/>
-			<tab label="วันที่ 3" closable="false"/>
-			<tab label="วันที่ 4" closable="false"/>
-			<tab label="วันที่ 5" closable="false"/>
-		</tabs>
-		
-		<toolbar width="92px">
-			<toolbarbutton image="/img/live.gif" onClick='alert("Add Tab")' /> 
-		</toolbar>
-		
-		<tabpanels>
-			<tabpanel>วันที่ 1 
-			
+	<include src="include/head_logo.zul" />
+	<include src="include/menubar.zul" />
+	<vbox hflex="1" width="1000px">
+		<div></div>
+		<div style="margin-left:auto;margin-right:auto;">
+			<vbox hflex="1">
+				<groupbox>
+					<caption label="ค้นหาโรงแรม" />
+					<vlayout hflex="1">
+						<hbox>
+							<label value="คำค้นหา" />
+							<textbox width="300px" />
+							<button label="ค้นหา" onClick="" />
+						</hbox>
+					</vlayout>
+				</groupbox>
 
-</combobutton>
-			</tabpanel>
-			<tabpanel>วันที่ 2 </tabpanel>
-			<tabpanel>วันที่ 3</tabpanel>
-			<tabpanel>วันที่ 4</tabpanel>
-			<tabpanel>วันที่ 5</tabpanel>
-		</tabpanels>
-	</tabbox>
-	
-</hbox>
+				<hbox
+					apply="com.projectth.model.ListEventSchedulateController">
+					<button label="เรียกข้อมูลใหม่" id="refreshBtn" />
+					<button label="เพิ่มโปรแกรมการท่องเที่ยวใหม่"
+						id="addNewBtn" />
+				</hbox>
+
+				<grid id="grdList" height="450px"
+					emptyMessage="ยังไม่มีข้อมูล">
+					<columns>
+						<column width="50px" label="รหัส" />
+						<column label="สถานะ" />
+						<column label="ชื่อกรุ๊ป" width="100px" />
+						<column width="100px" label="ตีม" />
+						<column width="100px" label="เอเจนท์" />
+						<column width="100px" label="ผู้ดูแล" />
+						<column width="100px" label="ประเทศ" />
+						
+						<column width="150px" label="วันรับเข้า" />
+						<column width="150px" label="วันส่งออก" />
+						
+						
+						<column width="250px" label="หมายเหตุ" />
+						<column width="250px" label="การดำเนินการ" />
+					</columns>
+					
+					<rows>
+						<row>
+							<label value="1" />
+							<label value="รอยืนยันรายการ" />
+							<label value="Program Thai01" />
+							<label value="ครอบครัว" />
+							<label value="จีน" />
+							<label value="A002 (Agent Name)" />
+							<label value="เจ้าหน้าที่1" />
+							<label value="15-12-2016" />
+							<label value="25-12-2016" />
+							<label value="นำเสนอโปรแกรมแล้ว ตัวแทนแจ้งลูกค้ารับโปรแกรมทัวร์แล้ว" />
+							<vbox>
+								<hbox>
+									<button label="แก้ไข" />
+									<button label="ลบ" />
+								</hbox>
+								<button label="เอกสารประกอบ" />
+							</vbox>
+						</row>
+						
+						<row>
+							<label value="2" />
+							<label value="รอยืนยันรายการ" />
+							<label value="Program Thai02" />
+							<label value="ฮันนีมูน" />
+							<label value="ฝรั่งเศษ" />
+							<label value="A001 (Agent Name)" />
+							
+							<label value="เจ้าหน้าที่2" />
+							<label value="07-01-2017" />
+							<label value="31-01-2017" />
+							<label
+								value="นำเสนอโปรแกรมแล้ว รอตัวแทนยืนยันกลับมา" />
+							<vbox>
+								<hbox>
+									<button label="แก้ไข" />
+									<button label="ลบ" />
+								</hbox>
+								<button label="เอกสารประกอบ" />
+							</vbox>
+						</row>
+					</rows>
+				</grid>
+			</vbox>
+		</div>
+
+
+	</vbox>
 </zk>
