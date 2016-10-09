@@ -2,7 +2,7 @@
 
 <zk>
 
-<vbox height="100%" width="100%" pack="center" align="center">
+<vbox height="60%" width="100%" pack="center" align="center">
 		<div height="100%" width="100%" align="center" style="background-image:url(/img/logo.png)" >
 			<window title="ฟอร์มลงชื่อเช้าใช้ระบบ" border="normal"
 				width="400px" apply="com.amithai.model.LoginController"
