@@ -1,4 +1,4 @@
-package com.amithai.model;
+package com.amithai.backend.dao;
 
 /**
  * Event DAO.
@@ -12,6 +12,9 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
+
+import com.amithai.backend.model.DataSource;
+import com.amithai.backend.model.TodoEvent;
 
 public class EventDAO {	
 	

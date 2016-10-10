@@ -1,10 +1,12 @@
-package com.amithai.model;
+package com.amithai.backend.model;
 
 import java.util.List;
 import java.util.UUID;
 
 import org.zkoss.bind.annotation.Command;
 import org.zkoss.bind.annotation.NotifyChange;
+
+import com.amithai.backend.dao.HotelDAO;
 
 public class HotelViewModel {
 	

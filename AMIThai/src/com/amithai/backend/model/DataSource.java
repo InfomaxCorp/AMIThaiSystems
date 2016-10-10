@@ -1,4 +1,4 @@
-package com.amithai.model;
+package com.amithai.backend.model;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

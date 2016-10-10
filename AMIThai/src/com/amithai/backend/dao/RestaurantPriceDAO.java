@@ -1,7 +1,9 @@
-package com.amithai.model;
+package com.amithai.backend.dao;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import com.amithai.backend.model.HotelItem;
 
 public class RestaurantPriceDAO {
 

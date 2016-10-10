@@ -1,4 +1,4 @@
-package com.amithai.model;
+package com.amithai.backend.controller;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,6 +9,9 @@ import org.zkoss.zk.ui.event.Event;
 import org.zkoss.zk.ui.select.SelectorComposer;
 import org.zkoss.zk.ui.select.annotation.Listen;
 import org.zkoss.zul.Window;
+
+import com.amithai.backend.dao.HotelDAO;
+import com.amithai.backend.model.HotelItem;
 
 public class ListHotelController extends SelectorComposer<Component> {
 	private static final long serialVersionUID = 1L;

@@ -1,4 +1,4 @@
-package com.amithai.model;
+package com.amithai.backend.controller;
 
 import org.zkoss.zk.ui.Component;
 import org.zkoss.zk.ui.Executions;
