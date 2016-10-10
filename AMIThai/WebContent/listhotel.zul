@@ -1,9 +1,14 @@
 <?page title="รายการโรงแรมที่พัก"?>
-<zk apply="com.amithai.model.ListHotelController">
+<zk >
 	<include src="include/head_logo.zul" />
 	<include src="include/menubar.zul" />
-	<div style="margin-left:auto;margin-right:auto;">
-		<vbox hflex="1">
+	<div style="margin-left:auto;margin-right:auto;"
+	
+	>
+		<vbox hflex="1"
+		apply="com.amithai.model.ListHotelController"
+		id="win"
+		>
 			<groupbox>
 				<caption label="ค้นหาโรงแรม" />
 				<vlayout hflex="1">
@@ -15,24 +20,51 @@
 				</vlayout>
 			</groupbox>
 
-			<hbox apply="com.amithai.model.ListHotelController">
+			<hbox  >
 				<button label="เรียกข้อมูลใหม่" id="refreshBtn" />
 				<button label="เพิ่มรายการใหม่" id="addNewBtn" />
 			</hbox>
-			
+
 			<grid id="grdList" height="450px"
+				
+				mold="paging" pageSize="10" 
+				model="${$items }"
 				emptyMessage="ยังไม่มีข้อมูล">
 				<columns>
-					<column width="70px" label="รหัส" />
-					<column label="โรงแรม" />
-					<column width="120px" label="เบอร์โทร" />
-					<column width="120px" label="อีเมล์" />
-					<column width="150px" label="ผู้ประสานงาน" />
+					<column width="70px" label="รหัส" sort="auto(id)" />
+					<column label="โรงแรม" sort="auto(name)" />
+					<column width="120px" label="เบอร์โทร"
+						sort="auto(tel)" />
+					<column width="120px" label="อีเมล์"
+						sort="auto(email)" />
+					<column width="150px" label="ผู้ประสานงาน"
+						sort="auto(contact_person)" />
 					<column width="250px" label="หมายเหตุ" />
 					<column width="250px" label="การดำเนินการ" />
 				</columns>
-				<rows>
+				<template name="model">
 					<row>
+						<label value="${each.id}" />
+						<label value="${each.name}" />
+						<label value="${each.tel}" />
+						<label value="${each.email}" />
+						<label value="${each.contact_person}" />
+						<label value="${each.remark}" />
+						<vbox>
+							<hbox>
+								<button label="แก้ไข" />
+								<button label="ลบ" />
+							</hbox>
+
+							<button label="ภาพประกอบ" />
+						</vbox>
+
+					</row>
+				</template>
+
+
+				 <rows>
+					<row>	
 						<label value="1" />
 						<label value="โรงแรมเอราวัณ" />
 						<label value="020000000" />
@@ -42,46 +74,18 @@
 						<vbox>
 							<hbox>
 								<button label="แก้ไข" id="editBtn" />
-								<button label="ลบ" id="delBtn" />
+								<button label="ลบ" id="delBtn" >
+								<attribute name="onClick"><![CDATA[
+    Messagebox.show("ต้องการ ลบข้อมูลนี้ ?", "Question", Messagebox.OK | Messagebox.CANCEL, Messagebox.QUESTION);
+]]></attribute>
+								</button>
 							</hbox>
-							<button label="ภาพประกอบ" />
+							<button label="ภาพประกอบ" id="addPic" />
 						</vbox>
 
 					</row>
-					<row>
-						<label value="1" />
-						<label value="โรงแรมเอราวัณ" />
-						<label value="020000000" />
-						<label value="test1@mail.com" />
-						<label value="นิติยา" />
-						<label value="เต็ม" />
-						<vbox>
-							<hbox>
-								<button label="แก้ไข" />
-								<button label="ลบ" />
-							</hbox>
-							<button label="ภาพประกอบ"
-								id="photoGalleryBtn" />
-						</vbox>
-
-					</row>
-					<row>
-						<label value="1" />
-						<label value="โรงแรมเอราวัณ" />
-						<label value="020000000" />
-						<label value="test1@mail.com" />
-						<label value="นิติยา" />
-						<label value="เต็ม" />
-						<vbox>
-							<hbox>
-								<button label="แก้ไข" />
-								<button label="ลบ" />
-							</hbox>
-							<button label="ภาพประกอบ" />
-						</vbox>
-
-					</row>
-				</rows>
+					
+				</rows> 
 			</grid>
 
 

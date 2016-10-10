@@ -1,5 +1,5 @@
 <?page title="รายการการแสดงโชว์"?>
-<zk apply="com.projectth.model.ListHotelController" >
+<zk apply="com.amithai.model.ListHotelController" >
 
 <include src="include/head_logo.zul" />
 	<include src="include/menubar.zul" />
@@ -44,9 +44,14 @@
         	 <vbox>
         	 <hbox>
         	 <button label="แก้ไข" id="editBtn" />
-        	 <button label="ลบ" id="delBtn" />
+        	 <button label="ลบ" id="delBtn" >
+								<attribute name="onClick"><![CDATA[
+    Messagebox.show("ต้องการ ลบข้อมูลนี้ ?", "Question", Messagebox.OK | Messagebox.CANCEL, Messagebox.QUESTION);
+]]></attribute>
+								</button>
+								
         	 </hbox>
-        		<button label="เพิ่มภาพประกอบการแสดง" id="photoGalleryBtn" />
+        		<button label="เพิ่มภาพประกอบสถานที่ท่องเที่ยว" id="addPic" />
         	 </vbox>
         	
         	</row>

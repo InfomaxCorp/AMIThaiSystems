@@ -1,6 +1,6 @@
 <window id="modalDialog" title=" เพิ่มรายการโรงแรมที่พักใหม่ "
 	border="normal" width="600px" 
-	 
+	
 	apply="com.amithai.model.HotelDialogController"
 	position="center,center" closable="true"
 	action="show: slideDown;hide: slideUp">
@@ -23,28 +23,27 @@
 								<column hflex="1" label="" />
 
 							</columns>
-
 							<rows>
 								<row>
 									<label value="ชื่อกิจการ/บริษัท" />
-									<textbox width="250px" />
+									<textbox width="250px" value="โรงแรมเอราวัณ" />
 								</row>
 								<row>
 									<label value="เว็บไซต์" />
-									<textbox width="250px" />
+									<textbox width="250px" value="www.erawanhotel.com"/>
 								</row>
 								<row>
 									<label value="ที่ตั้ง" />
-									<textbox width="390px" />
+									<textbox width="390px" value="12/14 กทม 10010" />
 
 								</row>
 								<row>
 									<label value="ส่งเอกสาร" />
-									<textbox width="390px" />
+									<textbox width="390px" value="12/14 กทม 10010" />
 								</row>
 								<row>
 									<label value="หมายเหตุ" />
-									<textbox width="390px" />
+									<textbox width="390px" value="ระบุรายละเอียด" />
 
 								</row>
 							</rows>
@@ -66,6 +65,8 @@
 								<row>
 									<label value="รายละเอียด" />
 									<textbox rows="15" type="text"
+									value="มีสระว่ายน้ำสำหรับเด็ก สระว่ายน้ำผู้ใหญ่ปิดปรับปรุง"
+									
 										cols="60" />
 
 								</row>
@@ -91,26 +92,27 @@
 
 							</columns>
 
-							<rows>
+ 
 
+							<rows>
 								<row>
 									<label value="โทรศัพท์" />
-									<textbox width="150px" />
-
+									<textbox width="150px" value="020000000" />
+									
 								</row>
 								<row>
 									<label value="โทรสาร" />
-									<textbox width="150px" />
+									<textbox width="150px" value="020000000" />
 
 								</row>
 								<row>
 									<label value="อีเมล์" />
-									<textbox width="150px" />
+									<textbox width="150px" value="test1@mail.com" />
 
 								</row>
 								<row>
 									<label value="ผู้ประสานงาน" />
-									<textbox width="150px" />
+									<textbox width="150px" value="นิติยา"/>
 
 								</row>
 							</rows>

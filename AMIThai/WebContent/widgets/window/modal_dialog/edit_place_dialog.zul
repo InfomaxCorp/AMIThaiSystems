@@ -1,10 +1,7 @@
-<window id="modalDialog" title=" เพิ่มรายการโรงแรมที่พักใหม่ "
-	border="normal" width="600px" 
-	 
-	apply="com.amithai.model.HotelDialogController"
+<window id="modalDialog" title=" เพิ่มรายการสถานที่ท่องเที่ยวใหม่ " border="normal"
+	width="600px" apply="com.amithai.model.PlaceDialogController"
 	position="center,center" closable="true"
 	action="show: slideDown;hide: slideUp">
-
 	<vlayout>
 
 		<tabbox>
@@ -27,24 +24,24 @@
 							<rows>
 								<row>
 									<label value="ชื่อกิจการ/บริษัท" />
-									<textbox width="250px" />
+									<textbox width="250px" value="สถานที่ท่องเทียวเอราวัณ" />
 								</row>
 								<row>
 									<label value="เว็บไซต์" />
-									<textbox width="250px" />
+									<textbox width="250px" value="www.erawanplace.com"/>
 								</row>
 								<row>
 									<label value="ที่ตั้ง" />
-									<textbox width="390px" />
+									<textbox width="390px" value="12/14 กทม 10010" />
 
 								</row>
 								<row>
 									<label value="ส่งเอกสาร" />
-									<textbox width="390px" />
+									<textbox width="390px" value="12/14 กทม 10010" />
 								</row>
 								<row>
 									<label value="หมายเหตุ" />
-									<textbox width="390px" />
+									<textbox width="390px" value="ระบุรายละเอียด" />
 
 								</row>
 							</rows>
@@ -65,7 +62,7 @@
 							<rows>
 								<row>
 									<label value="รายละเอียด" />
-									<textbox rows="15" type="text"
+									<textbox rows="10" type="text"
 										cols="60" />
 
 								</row>
@@ -92,25 +89,24 @@
 							</columns>
 
 							<rows>
-
 								<row>
 									<label value="โทรศัพท์" />
-									<textbox width="150px" />
-
+									<textbox width="150px" value="020000000" />
+									
 								</row>
 								<row>
 									<label value="โทรสาร" />
-									<textbox width="150px" />
+									<textbox width="150px" value="020000000" />
 
 								</row>
 								<row>
 									<label value="อีเมล์" />
-									<textbox width="150px" />
+									<textbox width="150px" value="test1@mail.com" />
 
 								</row>
 								<row>
 									<label value="ผู้ประสานงาน" />
-									<textbox width="150px" />
+									<textbox width="150px" value="นิติยา"/>
 
 								</row>
 							</rows>

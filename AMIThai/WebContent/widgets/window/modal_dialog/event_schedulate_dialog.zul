@@ -22,12 +22,41 @@
 
 					</row>
 					<row>
+						<label value="ตีมการท่องเที่ยว" />
+						<combobox id="combo1" width="200px" autodrop="true" buttonVisible="true">
+										<comboitem label="เลือกรายการ"/>
+										<comboitem label="THEME 1" />
+										<comboitem label="THEME 2" />
+										<comboitem label="THEME 3" />
+										<comboitem label="THEME 4" />
+										<comboitem label="THEME 5" />
+									</combobox>
+					</row>
+					<row>
+						<label value="โซนลูกทัวร์" />
+						<combobox id="combo2" width="200px" autodrop="true" buttonVisible="true">
+										<comboitem label="เลือกรายการ"/>
+										<comboitem label="ยุโรป" />
+										<comboitem label="จีน" />
+									</combobox>
+					</row>
+					<row>
 						<label value="ชื่อกรุ๊ป" />
 						<textbox width="290px" />
 					</row>
+					
+					
 					<row>
 						<label value="เอเจนท์" />
-						<textbox width="250px" />
+						
+						<combobox id="combo" width="200px" autodrop="true" buttonVisible="true">
+										<comboitem label="เลือกรายการ"/>
+										<comboitem label="AAA001" />
+										<comboitem label="AAA002" />
+										<comboitem label="AAA003" />
+									</combobox>
+						
+						
 					</row>
 					<row>
 						<label value="ผู้ดูแล" />
@@ -36,11 +65,11 @@
 					</row>
 					<row>
 						<label value="วันรับเข้า" />
-						<textbox width="150px" />
+						<datebox />
 					</row>
 					<row>
 						<label value="วันส่งออก" />
-						<textbox width="150px" />
+						<datebox />
 					</row>
 					<row>
 						<label value="หมายเหตุ" />

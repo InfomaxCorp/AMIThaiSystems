@@ -1,6 +1,6 @@
 <window id="modalDialog" title=" เพิ่มรายการราคาโรงแรมที่พักใหม่ "
 	border="normal" width="900px"
-	apply="com.projectth.model.HotelPriceDialogController"
+	apply="com.amithai.model.HotelPriceDialogController"
 	position="center,center" closable="true"
 	action="show: slideDown;hide: slideUp">
 	<vlayout>
@@ -30,7 +30,10 @@
 								
 								<row>
 									<label value="ชื่อโรงแรม" />
-									<textbox width="250px" />
+									<combobox id="combo" width="200px" autodrop="true" buttonVisible="true">
+										<comboitem label="เลือกรายการ"/>
+										<comboitem label="การแสดงเอราวัณ" />
+									</combobox>
 								</row>
 
 								<row>
@@ -130,7 +133,10 @@
 								</row>
 								<row>
 									<label value="ชื่อโรงแรม" />
-									<textbox width="250px" />
+									<combobox id="combo2" width="200px" autodrop="true" buttonVisible="true">
+										<comboitem label="เลือกรายการ"/>
+										<comboitem label="โรงแรมเอราวัณ" />
+									</combobox>
 								</row>
 								
 								

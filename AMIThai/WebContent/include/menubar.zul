@@ -67,6 +67,15 @@
 								
 		</menupopup>
 	</menu>
-
+<menu label="รายงาน"
+		image="/img/Centigrade-Widget-Icons/Briefcase-16x16.png">
+		<menupopup>
+			<menuitem
+				image="/img/Centigrade-Widget-Icons/BriefcaseSpark-16x16.png"
+				label="รายงานโปรแกรมการท่องเที่ยว" href="eventscheduale.zul"
+				onClick="alert(self.label)" />
+								
+		</menupopup>
+	</menu>
 </menubar>
 <!-- end  main menu bar  -->

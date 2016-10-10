@@ -24,5 +24,44 @@ public class ListPlaceController extends SelectorComposer<Component> {
 //		window.doModal();
 //	}
 	
+@Listen("onClick = #editBtn")
+	
+	/**
+	 * Open Dialog for create new data
+	 * @param e
+	 */
+	public void showModalEdit(Event e) {
+
+		// create component
+		Window window = (Window)Executions.createComponents(
+				"/widgets/window/modal_dialog/edit_place_dialog.zul", null, null);
+		
+		
+		// display modal window on screen
+		window.doModal();
+		
+	}
+	
+	
+
+@Listen("onClick = #addPic")
+	
+	/**
+	 * Open Dialog for create new data
+	 * @param e
+	 */
+	public void showModalPicture(Event e) {
+
+		// create component
+		Window window = (Window)Executions.createComponents(
+				"/widgets/window/modal_dialog/add_picture_dialog.zul", null, null);
+		
+		
+		// display modal window on screen
+		window.doModal();
+		
+	}
+	
+
 	
 }

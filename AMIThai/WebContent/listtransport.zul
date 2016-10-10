@@ -10,12 +10,8 @@
 	<vlayout  hflex="1">
             <hbox   >
                <label value="คำค้นหา" /><textbox width="300" /> <button label="ค้นหา" onClick="" />
-                
             </hbox>
-            
-           
         </vlayout>
-	
 	</groupbox>
 	<hbox apply="com.amithai.model.ListTransportController">
 	<button label="เรียกข้อมูลใหม่" id="refreshBtn" />

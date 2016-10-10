@@ -1,0 +1,11 @@
+<window 
+id="modalDialog" title=" อัพโหลดไฟล์ภาพ "
+	border="normal" width="300px" 
+closable="true"
+	action="show: slideDown;hide: slideUp"
+
+apply="com.amithai.model.AddPictureDialogController">
+เลือกไฟล์
+<fileupload label="อัพโหลดไฟล์"/>
+	
+</window>

@@ -1,6 +1,6 @@
 <window id="modalDialog" title=" เพิ่มรายการราคาสถานที่ท่องเที่ยวใหม่ "
 	border="normal" width="900px"
-	apply="com.projectth.model.PlacePriceDialogController"
+	apply="com.amithai.model.PlacePriceDialogController"
 	position="center,center" closable="true"
 	action="show: slideDown;hide: slideUp">
 	<vlayout>
@@ -14,7 +14,7 @@
 			<tabpanels>
 				<tabpanel>
 					<groupbox>
-						<caption label="เลือกสถานที่ท่องเที่ยว" />
+						<caption label="เลือกรายการการแสดง" />
 						<grid>
 							<columns>
 								<column width="120px" label="" />
@@ -28,8 +28,11 @@
 									<textbox width="250px" />
 								</row>
 								<row>
-									<label value="ชื่อสถานที่ท่องเที่ยว" />
-									<textbox width="250px" />
+									<label value="" />
+									<combobox id="combo" width="200px" autodrop="true" buttonVisible="true">
+										<comboitem label="เลือกรายการ"/>
+										<comboitem label="การแสดงเอราวัณ" />
+									</combobox>
 								</row>
 
 								<row>
