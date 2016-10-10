@@ -16,6 +16,7 @@ public class ListPriceRestaurantController extends SelectorComposer<Component> {
 		Window window = (Window)Executions.createComponents(
 				"/widgets/window/modal_dialog/price/restaurant_price_dialog.zul", null, null);
 		window.doModal();
+		//TODO
 	}
 	
 	
