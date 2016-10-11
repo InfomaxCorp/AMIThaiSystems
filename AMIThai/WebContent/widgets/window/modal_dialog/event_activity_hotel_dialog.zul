@@ -25,14 +25,21 @@
 								<row>
 									<label value="ชื่อกิจกรรม" />
 									<textbox width="300px" />
-								</row>
+								</row> 
 								<row>
 									<label value="รายละเอียด" />
 									<textbox width="300px" />
 								</row>
 								<row>
 									<label value="ประเภทบริการ" />
-									<textbox width="300px" />
+									<combobox id="combo" width="200px" autodrop="true" buttonVisible="true">
+										<comboitem label="เลือกรายการ"/>
+										<comboitem label="โรงแรม" />
+										<comboitem label="การแสดง />
+										<comboitem label="สถานที่ท่องเที่ยว" />
+										<comboitem label="อาหาร" />
+										<comboitem label="การเดินทาง" />
+									</combobox>
 								</row>
 								<row>
 									<label value="ค่าบริการ" />

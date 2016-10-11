@@ -22,7 +22,7 @@
 							</columns>
 
 							<rows>
-																<row>
+								<row>
 									<label value="ชื่อกิจการ/บริษัท" />
 									<textbox width="250px" />
 								</row>
